@@ -87,3 +87,107 @@ footer {
     padding: 30px 20px;
     font-size: 0.9rem;
 }
+/* ADDITIONS ONLY – SAME STYLE */
+
+/* Values */
+.values p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/* Stats */
+.stats {
+    text-align: center;
+}
+
+.stars {
+    color: #d4af37;
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+
+/* Reviews */
+.reviews p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/* Gallery */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.gallery img {
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+    margin: 8px;
+    border-radius: 6px;
+}
+/* SERVICES – BOX LAYOUT */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-box {
+    background-color: #111;
+    padding: 25px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #222;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gold accent hover */
+.service-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(212,175,55,0.15);
+}
+
+/* Center the last service */
+.service-center {
+    grid-column: 2 / 3;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-center {
+        grid-column: auto;
+    }
+}
+.estimate form {
+    max-width: 500px;   /* 👈 controls how short the lines are */
+    margin: 0 auto;     /* centers the form */
+}
+
+.estimate input,
+.estimate select,
+.estimate textarea {
+    width: 100%;
+}
+.estimate h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+section h2 {
+    text-align: center;
+}
